@@ -25,6 +25,9 @@ nav ul li a::after{
     content: '';
     
 } */
+ body{
+    background-color: #383735;
+ }
 *{
     margin: 0;
     padding: 0;
@@ -45,11 +48,34 @@ label.logo{
     font-weight:bold;
 }
 nav ul{
+    
     float: right;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 nav ul li{
+    padding: 10px;
     display: inline-block;
-    line-height: 80px;
-    margin: 0 15;
+    line-height: 30px;
+    margin: 10px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+nav ul li a:hover{
+    color: #000;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    display: block;
+    background-color: #000;
+    height: 2px;
+    transition: width 0.4s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    /* margin:auto; */
 }
