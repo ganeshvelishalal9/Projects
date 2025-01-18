@@ -1,0 +1,30 @@
+.card{
+    position:absolute;
+    top: 40%;
+    left: 20%;
+    margin: 0 auto;
+    width: 300px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+}
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(227, 26, 26);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+body{
+    background-color: black;
+}

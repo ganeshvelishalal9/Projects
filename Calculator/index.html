@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator/style.css">
+</head>
+<body>
+    <div id="calcy">
+        <input id="display" readonly >
+        <div id="keys">
+            <button onclick="Display('1')">1</button>
+            <button onclick="Display('2')">2</button>
+            <button onclick="Display('3')">3</button>
+            <button onclick="clearDisplay()"class="ac">AC</button>
+            <button onclick="Display('4')">4</button>
+            <button onclick="Display('5')">5</button>
+            <button onclick="Display('6')">6</button>
+            <button onclick="Display('+')" class="operator">+</button>
+            <button onclick="Display('7')">7</button>
+            <button onclick="Display('8')">8</button>
+            <button onclick="Display('9')">9</button>
+            <button onclick="Display('-')" class="operator">-</button>
+            <button onclick="Display('00')">00</button>
+            <button onclick="Display('0')">0</button>
+            <button onclick="Display('.')">.</button>
+            <button onclick="Display('*')" class="operator">*</button>
+            <button onclick="Display('/')" class="operator">/</button>
+            <button onclick="Display('%')" class="operator">%</button>
+            <button onclick="backSpace()" class="ac"<i class="fa-solid fa-delete-left"></i>></button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

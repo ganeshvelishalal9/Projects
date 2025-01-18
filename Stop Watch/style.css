@@ -1,0 +1,20 @@
+#body{
+    text-align: center;
+    border-color: rgb(21, 22, 22);
+}
+#div{
+    background-color: antiquewhite;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 10;
+}
+button{
+    margin: 10px;
+    width: 100px;
+    height: 59px;
+}
+#time{
+    text-align: center;
+    
+}

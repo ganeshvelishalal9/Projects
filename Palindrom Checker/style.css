@@ -1,0 +1,10 @@
+#div{
+    background-color: rgb(213, 188, 188);
+    text-align: center;
+    border: 3px;
+    border-radius: 10px;
+    border-color: black;
+}
+#body{
+    background-color: rgb(106, 177, 205);
+}

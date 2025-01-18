@@ -1,0 +1,26 @@
+#heading{
+    text-align: center;
+    flex: size 30px;
+}
+#box{
+    margin: 10px;
+    border: 3px solid;
+}
+#red{
+    background-color: rgb(215, 53, 53);
+}
+#blue{
+    background-color: rgb(96, 96, 197);
+}
+#green{
+    background-color: rgb(74, 193, 74);
+}
+.buttons{
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+}
