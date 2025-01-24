@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <label class="logo">Ganesh</label>
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#works">Work</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -31,10 +33,10 @@
         <div class="container">
             <div class="row">
                 <div class="about-clo1">
-                    <img src="images/PHOTO.jpg" height="400px">
+                    <img src="images/PHOTO.jpg" >
                 </div>
                 <div class="about-clo2">
-                    <h1 class="sub-about">About me</h1>
+                    <h1 class="sub-title">About me</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit debitis nam, ducimus ad eligendi culpa eum cum alias, repellendus neque odit iusto dolorem placeat officiis minima veritatis laudantium similique deleniti! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ad explicabo pariatur sit repellat similique, quaerat magnam mollitia illo neque. Tenetur autem consectetur excepturi vel et temporibus sit quasi modi!</p>
                 </div>
             </div>
@@ -44,32 +46,21 @@
     <!-- -------------------------WORKS------------------------ -->
     <div id="works">
         <div class="container">
-            <h1 class="sub-work">My Work</h1>
+            <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <div class="top-work">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                    </div>
-                    <p class="name">Ecommers Website</p>
-                    <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
-                    <div class="technology">
-                        <P>HTML</P>
-                        <P>CSS</P>
-                        <P>JavaScript</P>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="top-work">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                    </div>
-                    <p class="name">Portfollio Website</p>
+                <div>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h2>Ecommers Website</h2>
                     <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
                 </div>
-                <div class="work">
-                    <div class="top-work">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                    </div>
-                    <p class="name">Expence Tracker</p>
+                <div>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h2>Portfollio Website</h2>
+                    <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h2>Expence Tracker</h2>
                     <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
                 </div>
             </div>
@@ -78,7 +69,7 @@
     <!-- ------------------------SKILLS--------------------------- -->
     <div id="skills">
         <div class="container">
-            <h1 class="sub-skills">Skills</h1>
+            <h1 class="sub-title">Skills</h1>
             <div class="icons">
                 <i class="fa-brands fa-java"></i>
                 <i class="fa-solid fa-c"></i>
@@ -99,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-skills">Get in Touch</h1>
+                    <h1 class="sub-title">Get in Touch</h1>
                     <p><i class="fa-regular fa-envelope"></i>  ganesh@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>  1234567890</p>
                     <div class="social-icons">
@@ -120,6 +111,14 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        var sideBar = document.getElementById("sideMenu");
+        function openMenu(){
+            sideBar.style.right = "0";
+        }
+        function closeMenu(){
+            sideBar.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
