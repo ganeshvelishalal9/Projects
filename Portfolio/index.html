@@ -5,19 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfollio</title>
     <link rel="stylesheet" href="/Portfolio/style.css">
+    <script src="https://kit.fontawesome.com/3a48da6e99.js" crossorigin="anonymous"></script>
 </head>
-<body id="body">
-    <div class="container">
-        <nav>
-            <label class="logo">Ganesh</label>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+<body">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <label class="logo">Ganesh</label>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,I'm <span>Ganesh</span> Velishala</h1>
+            </div>
+        </div>
     </div>
+    <!-- -----------------ABOUT ME------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-clo1">
+                    <img src="images/PHOTO.jpg" height="400px">
+                </div>
+                <div class="about-clo2">
+                    <h1 class="sub-about">About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit debitis nam, ducimus ad eligendi culpa eum cum alias, repellendus neque odit iusto dolorem placeat officiis minima veritatis laudantium similique deleniti! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ad explicabo pariatur sit repellat similique, quaerat magnam mollitia illo neque. Tenetur autem consectetur excepturi vel et temporibus sit quasi modi!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------------WORKS------------------------ -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-work">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="top-work">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <p class="name">Ecommers Website</p>
+                    <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
+                    <div class="technology">
+                        <P>HTML</P>
+                        <P>CSS</P>
+                        <P>JavaScript</P>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="top-work">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <p class="name">Portfollio Website</p>
+                    <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
+                </div>
+                <div class="work">
+                    <div class="top-work">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                    <p class="name">Expence Tracker</p>
+                    <p class="matter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et vitae eaque minus saepe commodi blanditiis nemo adipisci ea </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------SKILLS--------------------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-skills">Skills</h1>
+            <div class="icons">
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-solid fa-c"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-solid fa-code"></i> <!-- DSA-->
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------Contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-skills">Get in Touch</h1>
+                    <p><i class="fa-regular fa-envelope"></i>  ganesh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  1234567890</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
